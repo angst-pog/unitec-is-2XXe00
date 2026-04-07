@@ -1,0 +1,20 @@
+@page
+@{
+    // Archivo: ./src/WebApp2XXE00/Pages/Index.cshtml
+    
+    // 1. Declaración de variables
+    double ladoA = 5;
+    double ladoB = 10;
+    double ladoC = 15;
+    
+    // 2. Consumo de la Librería de Clases (Exactamente igual que en la consola)
+    double perimetro = Figura2XXE00.Perimetro(ladoA,ladoB);
+    double area = Figura2XXE00.Area(ladoB,ladoC);
+    double volumen = Figura2XXE00.Volumen(ladoA,ladoB,ladoC);
+}
+
+El perímetro de un Paralelogramo con un lado de @(ladoB)cm y otro de @(ladoA)cm es @(perimetro)cm
+<br />
+El área de un Paralelogramo con una base de @(ladoB)cm y una altura de @(ladoC)cm es @(area)cm2
+<br />
+El volumen de un Paralelogramo con dimenciones de @(ladoA), @(ladoB), @(ladoC)cm2 es de @(volumen)cm3
