@@ -3,18 +3,18 @@
     // Archivo: ./src/WebApp2XXE00/Pages/Index.cshtml
     
     // 1. Declaración de variables
-    double ladoA = 5;
-    double ladoB = 10;
-    double ladoC = 15;
-    
+    double a = 5;
+    double b = 10;
+    double c = 15;
+    double h = 20;
     // 2. Consumo de la Librería de Clases (Exactamente igual que en la consola)
-    double perimetro = Figura2XXE00.Perimetro(ladoA,ladoB);
-    double area = Figura2XXE00.Area(ladoB,ladoC);
-    double volumen = Figura2XXE00.Volumen(ladoA,ladoB,ladoC);
+    double perimetro =Figura2XXE00.CalcularPerimetroParalelogramo(a,b);
+    double area =Figura2XXE00.CalcularAreaParalelogramo(b,c);
+    double volumen =Figura2XXE00.CalcularVolumenParalelogramo(area,h);
 }
 
-El perímetro de un Paralelogramo con un lado de @(ladoB)cm y otro de @(ladoA)cm es @(perimetro)cm
+El perímetro de un Paralelogramo de @(a)cm y @(b)cm es @(perimetro)cm
 <br />
-El área de un Paralelogramo con una base de @(ladoB)cm y una altura de @(ladoC)cm es @(area)cm2
+El área de un Paralelogramo de @(b)cm y @(c)cm es @(area)cm2
 <br />
-El volumen de un Paralelogramo con dimenciones de @(ladoA), @(ladoB), @(ladoC)cm2 es de @(volumen)cm3
+El volumen de un Paralelogramo con un area de @(area) y un altura de @(h) es de @(volumen)cm3
