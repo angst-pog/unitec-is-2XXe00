@@ -6,7 +6,11 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+app.UseRouting();
 // Mapear las rutas hacia la carpeta Pages
 app.MapRazorPages();
 
 app.Run();
+
+//OBLIGATORIA PARA PRUEBAS DE INTEGRACIÓN
+public partial class Program{}
